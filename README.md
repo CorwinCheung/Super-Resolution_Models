@@ -43,6 +43,7 @@ Compiled code of many super resolution models, starting from simple to more adva
 
 ### ResNet
 - [Enhanced Deep Residual Networks for Single Image Super-Resolution](https://arxiv.org/pdf/1707.02921)
+- [Github: Super Resolution Resnet](https://github.com/rstar000/super-resolution-resnet/tree/master)
 
 ### UNet
 - [Cedrick Chee: Knowledge Courses](https://cedrickchee.gitbook.io/knowledge/courses/fast.ai/deep-learning-part-2-cutting-edge-deep-learning-for-coders/2018-edition/lesson-14-image-segmentation)
