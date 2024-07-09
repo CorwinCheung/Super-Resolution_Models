@@ -1,0 +1,152 @@
+digraph G {
+    rankdir=LR;
+    node [shape=plain, fontsize=10, width=0.1, height=0.1];
+
+    input [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+        <TR><TD>InputLayer</TD></TR>
+        <TR><TD>(800, 1200, 3)</TD></TR>
+        <TR><TD>Param #: 0</TD></TR>
+        </TABLE>>];
+
+    conv2d [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+        <TR><TD>Conv2D</TD></TR>
+        <TR><TD>(800, 1200, 64)</TD></TR>
+        <TR><TD>Param #: 1792</TD></TR>
+        </TABLE>>];
+
+    conv2d_2 [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+        <TR><TD>Conv2D_2</TD></TR>
+        <TR><TD>(800, 1200, 64)</TD></TR>
+        <TR><TD>Param #: 36928</TD></TR>
+        </TABLE>>];
+
+    max_pooling2d [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+        <TR><TD>MaxPooling2D</TD></TR>
+        <TR><TD>(400, 600, 64)</TD></TR>
+        <TR><TD>Param #: 0</TD></TR>
+        </TABLE>>];
+
+    dropout [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+        <TR><TD>Dropout</TD></TR>
+        <TR><TD>(400, 600, 64)</TD></TR>
+        <TR><TD>Param #: 0</TD></TR>
+        </TABLE>>];
+
+    conv2d_3 [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+        <TR><TD>Conv2D_3</TD></TR>
+        <TR><TD>(400, 600, 128)</TD></TR>
+        <TR><TD>Param #: 73856</TD></TR>
+        </TABLE>>];
+
+    conv2d_4 [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+        <TR><TD>Conv2D_4</TD></TR>
+        <TR><TD>(400, 600, 128)</TD></TR>
+        <TR><TD>Param #: 147584</TD></TR>
+        </TABLE>>];
+
+    max_pooling2d_2 [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+        <TR><TD>MaxPooling2D_2</TD></TR>
+        <TR><TD>(200, 300, 128)</TD></TR>
+        <TR><TD>Param #: 0</TD></TR>
+        </TABLE>>];
+
+    conv2d_5 [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+        <TR><TD>Conv2D_5</TD></TR>
+        <TR><TD>(200, 300, 256)</TD></TR>
+        <TR><TD>Param #: 295168</TD></TR>
+        </TABLE>>];
+
+    up_sampling2d [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+        <TR><TD>UpSampling2D</TD></TR>
+        <TR><TD>(400, 600, 256)</TD></TR>
+        <TR><TD>Param #: 0</TD></TR>
+        </TABLE>>];
+
+    conv2d_6 [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+        <TR><TD>Conv2D_6</TD></TR>
+        <TR><TD>(400, 600, 128)</TD></TR>
+        <TR><TD>Param #: 295040</TD></TR>
+        </TABLE>>];
+
+    conv2d_7 [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+        <TR><TD>Conv2D_7</TD></TR>
+        <TR><TD>(400, 600, 128)</TD></TR>
+        <TR><TD>Param #: 147584</TD></TR>
+        </TABLE>>];
+
+    add [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+        <TR><TD>Add</TD></TR>
+        <TR><TD>(400, 600, 128)</TD></TR>
+        <TR><TD>Param #: 0</TD></TR>
+        </TABLE>>];
+
+    up_sampling2d_2 [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+        <TR><TD>UpSampling2D_2</TD></TR>
+        <TR><TD>(800, 1200, 128)</TD></TR>
+        <TR><TD>Param #: 0</TD></TR>
+        </TABLE>>];
+
+    conv2d_8 [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+        <TR><TD>Conv2D_8</TD></TR>
+        <TR><TD>(800, 1200, 64)</TD></TR>
+        <TR><TD>Param #: 73792</TD></TR>
+        </TABLE>>];
+
+    conv2d_9 [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+        <TR><TD>Conv2D_9</TD></TR>
+        <TR><TD>(800, 1200, 64)</TD></TR>
+        <TR><TD>Param #: 36928</TD></TR>
+        </TABLE>>];
+
+    add_2 [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+        <TR><TD>Add_2</TD></TR>
+        <TR><TD>(800, 1200, 64)</TD></TR>
+        <TR><TD>Param #: 0</TD></TR>
+        </TABLE>>];
+
+    conv2d_10 [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+        <TR><TD>Conv2D_10</TD></TR>
+        <TR><TD>(800, 1200, 3)</TD></TR>
+        <TR><TD>Param #: 1731</TD></TR>
+        </TABLE>>];
+
+    edge [fontsize=10];
+
+    input -> conv2d;
+    conv2d -> conv2d_2;
+    conv2d_2 -> max_pooling2d;
+    max_pooling2d -> dropout;
+    dropout -> conv2d_3;
+    conv2d_3 -> conv2d_4;
+    conv2d_4 -> max_pooling2d_2;
+    max_pooling2d_2 -> conv2d_5;
+    conv2d_5 -> up_sampling2d;
+    up_sampling2d -> conv2d_6;
+    conv2d_6 -> conv2d_7;
+    conv2d_4 -> add;
+    conv2d_7 -> add;
+    add -> up_sampling2d_2;
+    up_sampling2d_2 -> conv2d_8;
+    conv2d_8 -> conv2d_9;
+    conv2d_9 -> add_2;
+    conv2d_2 -> add_2;
+    add_2 -> conv2d_10;
+}

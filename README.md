@@ -1,6 +1,6 @@
 # Super Resolution Models from Simple to Advanced
 
-Compiled code of many super resolution models, starting from simple to more advanced architectures.
+Compiled code of many super resolution models, starting from simple to more advanced architectures. All models trained on MSCOCO 2017 data.
 
 ## Model Progression
 1. Autoencoder
@@ -17,10 +17,28 @@ Compiled code of many super resolution models, starting from simple to more adva
 - [Perceptual Losses for Real-Time Style Transfer and Super-Resolution](https://arxiv.org/pdf/1603.08155)
 - [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/pdf/1609.04802)
 
+## Architecture Diagrams
+
+### Autoencoder:
+![Architecture](images/autoencoder_architecture.png)
+
+### ResNet:
+![Architecture](images/EDSR_architecture.png)
+
+### UNet
+![Architecture](images/UNet_architecture.png)
+
+### SRResNet
+![Architecture](images/SRResNet_architecture.png)
+
+### SRGAN
+![Architecture](images/SRGAN_architecture.png)
+
+
 ## Sources
 ### Autoencoder
 - [Kaggle: Image Super-Resolution using Autoencoders](https://www.kaggle.com/code/quadeer15sh/image-super-resolution-using-autoencoders)
-- [GitHub: Image Super-Resolution using Autoencoders](https://github.com/ilopezfr/image-superres/blob/master/)
+- [GitHub: Image Super-Resolution using Autoencoders](https://github.com/ilopezfr/image-superres/blob/master/Image_Super_Resolution_using_Autoencoders.ipynb)
 - [Medium: Super Resolution using Autoencoders and TF2.0](https://medium.com/analytics-vidhya/super-resolution-using-autoencoders-and-tf2-0-505215c1674)
 
 ### ResNet
