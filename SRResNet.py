@@ -384,6 +384,13 @@ def adjust_learning_rate(optimizer, shrink_factor):
         param_group['lr'] = param_group['lr'] * shrink_factor
     print("The new learning rate is %f\n" % (optimizer.param_groups[0]['lr'],))
 
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+rgb_weights = torch.FloatTensor([65.481, 128.553, 24.966]).to(device)
+imagenet_mean = torch.FloatTensor([0.485, 0.456, 0.406]).unsqueeze(1).unsqueeze(2)
+imagenet_std = torch.FloatTensor([0.229, 0.224, 0.225]).unsqueeze(1).unsqueeze(2)
+imagenet_mean_cuda = torch.FloatTensor([0.485, 0.456, 0.406]).to(device).unsqueeze(0).unsqueeze(2).unsqueeze(3)
+imagenet_std_cuda = torch.FloatTensor([0.229, 0.224, 0.225]).to(device).unsqueeze(0).unsqueeze(2).unsqueeze(3)
+
 def convert_image(img, source, target):
     """
     Convert an image from a source format to a target format.
@@ -437,7 +444,6 @@ def convert_image(img, source, target):
     return img
 
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 grad_clip = None  # clip if gradients are exploding
 print_freq = 500  # print training status once every __ batches
 
